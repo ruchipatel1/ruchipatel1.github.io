@@ -1,2 +1,0 @@
-# personal-portfolio
-This is how I learned HTML, CSS, & JavaScript! This is a static site that showcases my ability to style websites without help from Bootstrap. In the future, however, I intend using Bootstrap and making my resume in HTML.
