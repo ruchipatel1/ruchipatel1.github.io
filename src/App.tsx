@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, ScrollRestoration } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, ScrollRestoration } from "react-router-dom";
 
 import { Layout } from "@/components/layout";
 import { About } from "@/pages/About";
@@ -7,19 +7,27 @@ import { Home } from "@/pages/Home";
 import { Resume } from "@/pages/Resume";
 import { Work } from "@/pages/Work";
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route
+      element={
+        <>
+          <ScrollRestoration />
+          <Layout />
+        </>
+      }
+    >
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/work" element={<Work />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/contact" element={<Contact />} />
+    </Route>,
+  ),
+);
+
 export default function App() {
   return (
-    <BrowserRouter>
-      <ScrollRestoration />
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   );
 }
