@@ -5,14 +5,20 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 const skills = [
-  "Java",
-  "MATLAB",
-  "HTML & CSS",
-  "JavaScript",
+  "C#",
+  "Python",
   "TypeScript",
+  "Go",
+  "C++",
+  "SQL",
   "React",
-  "LaTeX",
+  "Node.js",
+  "Docker",
+  "AWS",
+  "ASP.NET",
   "Git",
+  "Sentry",
+  "Splunk",
 ];
 
 export function About() {
@@ -25,20 +31,27 @@ export function About() {
       <Separator />
       <div className="space-y-4 text-pretty leading-relaxed text-muted-foreground">
         <p>
-          I study computer science at the{" "}
+          I&apos;m a fullstack software engineer at{" "}
           <a
-            href="https://www.gatech.edu/"
+            href="https://www.atlassian.com/"
             className="font-medium text-foreground underline-offset-4 hover:underline"
             target="_blank"
             rel="noreferrer noopener"
           >
-            Georgia Institute of Technology
+            Atlassian
           </a>
-          , with concentrations in modeling and simulation and in information management.
+          , where I work on enterprise product and platform problems spanning permissions, frontend architecture,
+          event-driven workflows, and performance.
         </p>
         <p>
-          I enjoy turning messy problems into clear implementations—whether that is simulation, data-focused tooling,
-          or interfaces that make complex ideas easier to explore.
+          I like turning messy, high-impact problems into systems that are easier to reason about, safer to extend, and
+          simpler for other engineers to use. A lot of my work centers on reusable architecture, internal tooling, and
+          shipping features that hold up under scale.
+        </p>
+        <p>
+          Before Atlassian, I interned at Qualtrics, where I built fullstack tools for ML pipeline visibility and
+          large-scale auditability. I studied computer science at Georgia Tech, but this site is primarily about the
+          work I&apos;ve done as an engineer.
         </p>
         <p>
           You can find code on{" "}

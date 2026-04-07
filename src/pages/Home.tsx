@@ -13,12 +13,13 @@ export function Home() {
       <section className="space-y-6">
         <p className="font-mono text-sm text-muted-foreground">Hello —</p>
         <h1 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-          I&apos;m Ruchi, a computer science student at Georgia Tech focused on modeling, simulation, and information
-          management.
+          I&apos;m Ruchi, a fullstack software engineer building reliable systems, scalable internal platforms, and
+          enterprise product experiences.
         </h1>
         <p className="max-w-2xl text-pretty text-lg text-muted-foreground">
-          I build software, study systems, and share selected work on this site. Browse the project index for code and
-          write-ups, or jump to my resume and contact page.
+          I currently work at Atlassian, where I lead and ship platform work across permissions, asynchronous
+          workflows, frontend architecture, and performance. This site collects selected projects, my resume, and ways
+          to get in touch.
         </p>
         <div className="flex flex-wrap gap-3">
           <Button asChild>
